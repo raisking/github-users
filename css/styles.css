@@ -5,3 +5,9 @@
     border: 1px solid #ddd;
     margin: 2px;
 }
+.searchContainer{
+    padding-top: 40px;
+}
+.searchContainer h1{
+    font-weight: bolder;
+}
