@@ -11,3 +11,7 @@
 .searchContainer h1{
     font-weight: bolder;
 }
+#main-container{
+    background-color: #ccc;
+    margin-top: 30px;
+}
