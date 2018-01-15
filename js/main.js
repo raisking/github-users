@@ -39,6 +39,7 @@ $(document).ready(function(){
                    `);
                })
             })
+
             $('#profile').html(`
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -63,6 +64,10 @@ $(document).ready(function(){
                 <li class ="list-group-item">Repos URL: ${user.html_url}</li>
                 <li class ="list-group-item">Repos URL:  ${user.repos_url}</li>
                 <li class ="list-group-item">Repos URL: ${user.followers_url}</li>
+                <li class ="list-group-item">Followers: ${user.followers}</li>
+                <li class ="list-group-item">Following: ${user.following}</li>
+                <li class ="list-group-item">Created_at: ${user.created_at}</li>
+                <li class ="list-group-item">Updated_at: ${user.updated_at}</li>
             </ul>
             </div>
             
