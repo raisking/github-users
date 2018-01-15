@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('#searchUser').on('keyup', function(e){
         let username = e.target.value;
-
         //request to github
         $.ajax({
             url: 'https://api.github.com/users/' + username,
@@ -16,10 +15,10 @@ $(document).ready(function(){
                     client_id: '1178504a091b4bbe37e9',
                     client_secret: '6973d5fa6672ac59142d3869f543e8493402e1ec',
                     sort: 'created: asc',
-            
                 }
             }).done(function(repos){
                $.each(repos, function(index, repo){
+                //    console.log(repos);]
                    $('#repos').append(`
                     <div class="well">
                         <div class="row row-div">
@@ -39,7 +38,6 @@ $(document).ready(function(){
                    `);
                })
             })
-
             $('#profile').html(`
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -61,7 +59,6 @@ $(document).ready(function(){
                 <li class ="list-group-item">Blog: ${user.blog}</li>
                 <li class ="list-group-item">Location: ${user.location}</li>
                 <li class ="list-group-item">Member Since: ${user.created_at}</li>
-                <li class ="list-group-item">Repos URL: ${user.html_url}</li>
                 <li class ="list-group-item">Repos URL:  ${user.repos_url}</li>
                 <li class ="list-group-item">Repos URL: ${user.followers_url}</li>
                 <li class ="list-group-item">Followers: ${user.followers}</li>
@@ -69,8 +66,7 @@ $(document).ready(function(){
                 <li class ="list-group-item">Created_at: ${user.created_at}</li>
                 <li class ="list-group-item">Updated_at: ${user.updated_at}</li>
             </ul>
-            </div>
-            
+            </div>   
     </div>
   </div>
 </div>

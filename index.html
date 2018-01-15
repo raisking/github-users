@@ -11,14 +11,17 @@
     <title>Find a Friend in Github</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <p><a class="navbar-brand" href="#"><strong>Search Github Users</strong></a></p>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <p><a class="navbar-brand" id="searchTitle"><strong>Search Github Users</strong></a></p>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#" id="searchTitle">Search Github Users</a>
     </nav>
       <div class="container" id="main-container">
         <div class="searchContainer">
-          <h1> Search Github Users</h1>
-          <p class="lead">Enter a username to fetch a users profile info and repos</p>
-        <input type="text" id= "searchUser" class="form-control" placeholder="Github Username">
+          <h1 id="searchTitle"> Search Github Users and Repos</h1>
+        <input type="text" id= "searchUser" class="form-control" placeholder="Enter Github Username..........">
         </div>
         <br>
         <div id="profile"></div>
